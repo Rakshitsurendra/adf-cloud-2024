@@ -1,0 +1,23 @@
+{
+	"name": "ds_target_CopyCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ADLS_Storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "CSV_Files",
+				"fileSystem": "adf-storage"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-cloud-2024"
+		},
+		"ls_ADLS_Storage_accountKey": {
+			"value": ""
+		},
+		"ls_SQLTargetDB_password": {
+			"value": ""
+		},
+		"ls_ADLS_Storage_properties_typeProperties_url": {
+			"value": "https://adlscloudstorage2024.dfs.core.windows.net/"
+		},
+		"ls_SQLSerevr_KeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://KeyVaultCloud.vault.azure.net/"
+		},
+		"ls_SQLTargetDB_properties_typeProperties_server": {
+			"value": "adf-dev-practice.database.windows.net"
+		},
+		"ls_SQLTargetDB_properties_typeProperties_database": {
+			"value": "TargetDB"
+		},
+		"ls_SQLTargetDB_properties_typeProperties_userName": {
+			"value": "surendra"
+		},
+		"ls_Source_TumblingTrigger_SQLSerevr_properties_typeProperties_connectionString_secretName": {
+			"value": "SQLSerevr-adf-dev-practice"
+		},
+		"trigger1_properties_pipeline_parameters_StartTime": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"trigger1_properties_pipeline_parameters_EndTime": {
+			"value": "@trigger().outputs.windowEndTime"
+		}
+	}
+}

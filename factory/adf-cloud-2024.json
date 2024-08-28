@@ -1,0 +1,9 @@
+{
+	"name": "adf-cloud-2024",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7d21263a-1dd0-4986-ab03-30ccbc012c50",
+		"tenantId": "e9be2c06-c062-488d-b510-4a3f1f3491c6"
+	}
+}

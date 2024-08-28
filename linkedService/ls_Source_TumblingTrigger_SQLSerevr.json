@@ -1,0 +1,18 @@
+{
+	"name": "ls_Source_TumblingTrigger_SQLSerevr",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_SQLSerevr_KeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SQLSerevr-adf-dev-practice"
+			}
+		}
+	}
+}

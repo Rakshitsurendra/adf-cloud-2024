@@ -1,0 +1,17 @@
+{
+	"name": "ls_SQLTargetDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "adf-dev-practice.database.windows.net",
+			"database": "TargetDB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "surendra",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEM1Rjg4NEUxLTI4NTgtNEM5Mi04Q0VBLUUwNjNGMTFFRUQ1OF8wOWJiYWI1Zi1mZDNhLTRjZjQtYmYxYy1jMDc0MjE0NzhlMDYiDQp9"
+		}
+	}
+}

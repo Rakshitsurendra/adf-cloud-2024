@@ -39,6 +39,10 @@
 			"type": "string",
 			"defaultValue": "SQLSerevr-adf-dev-practice"
 		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/be1a74a4-a589-48b7-9a17-3545aac10d3b/resourceGroups/rg-freeTrail/providers/Microsoft.Storage/storageAccounts/adlscloudstorage2024"
+		},
 		"trigger1_properties_pipeline_parameters_StartTime": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowStartTime"
@@ -97,6 +101,9 @@
 					},
 					"ls_Source_TumblingTrigger_SQLSerevr_properties_typeProperties_connectionString_secretName": {
 						"value": "[parameters('ls_Source_TumblingTrigger_SQLSerevr_properties_typeProperties_connectionString_secretName')]"
+					},
+					"EventTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('EventTrigger_properties_typeProperties_scope')]"
 					},
 					"trigger1_properties_pipeline_parameters_StartTime": {
 						"value": "[parameters('trigger1_properties_pipeline_parameters_StartTime')]"

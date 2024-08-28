@@ -29,6 +29,9 @@
 		"ls_Source_TumblingTrigger_SQLSerevr_properties_typeProperties_connectionString_secretName": {
 			"value": "SQLSerevr-adf-dev-practice"
 		},
+		"EventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/be1a74a4-a589-48b7-9a17-3545aac10d3b/resourceGroups/rg-freeTrail/providers/Microsoft.Storage/storageAccounts/adlscloudstorage2024"
+		},
 		"trigger1_properties_pipeline_parameters_StartTime": {
 			"value": "@trigger().outputs.windowStartTime"
 		},
